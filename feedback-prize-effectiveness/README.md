@@ -2,17 +2,31 @@
 
 ## EDA
 
+$$
+f{'}(x*\theta(x)) - f{'}(0) = f{''}*0.5*x*\theta(x)
+$$
+
+$$
+e^{t^2}
+$$
+
 
 
 ## THINKING
 
 some methods maybe useful for the task.
 
-- contrastive learning 
-- warmup
-- multitask: not only for effectiveness, but also for some other targets like essay id
-- How to use the relation of same essay. If we use multitask method, there will be too many target values. 
--  
+- warm up
+- test different seed 
+- loss function: label unbalanced.
 
 ## METHOD
 
+Methods that others validate useful:
+
+from https://www.kaggle.com/code/lastofus111/fb-infer : 
+
+- WeightedLayerPooling
+- GroupFold
+- Different learning rates across layers
+- Preprocessing (encoding-resolve+normalize)
